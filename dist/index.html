@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- flowbite css link  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .bg-primary {
+        background: rgb(13, 56, 54);
+        background: linear-gradient(
+          111deg,
+          rgba(13, 56, 54, 1) 15%,
+          rgba(13, 56, 54, 1) 68%
+        );
+      }
+      .text-color-primary {
+        color: #00c5bc;
+      }
+
+      .bg-secondary {
+        background-color: seagreen;
+      }
+    </style>
+  </head>
+  <body class="bg-primary">
+    <!-- start header -->
+    <header class="">
+      <!-- start navbar -->
+      <nav
+        class="px-20 bg-primary dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b"
+      >
+        <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#" class="flex items-center justify-between">
+            <img
+              src="../pics/Screenshot 2023-09-30 154152.png"
+              class="h-8 mr-3"
+              alt="Kaung Myat Kyaw Logo"
+            />
+            <img
+              src="../pics/Screenshot 2023-09-30 154236.png"
+              class="h-8 mr-3"
+              alt="Kaung Myat Kyaw Logo"
+            />
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-teal-200 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-blue-200 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-blue-200 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-blue-200 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-blue-200 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <main class="container px-24">
+      <!-- start biography -->
+      <section>
+        <div
+          class="grid gap-3 mt-28 grid-cols-1 grid-rows-1 lg:grid-rows-1 lg:grid-cols-2"
+        >
+          <div class="flex justify-center items-center">
+            <div class="text-left">
+              <h6 class="text-teal-400 text-sm mb-1">Hey There! I am</h6>
+              <h1 class="text-4xl font-bold font-mono text-teal-300 my-2">
+                Kaung Myat Kyaw
+              </h1>
+              <p class="font-mono text-teal-400 mb-3">
+                <span class="text-teal-100">Beginner</span> Web-Developer
+              </p>
+              <p class="text-teal-200">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Pariatur animi possimus fuga eaque non!
+              </p>
+              <div class="mt-3">
+                <button
+                  type="button"
+                  class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                >
+                  Contact Me
+                </button>
+                <button
+                  type="button"
+                  class="text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="../pics/My PhotophotoAid-removed-background.png"
+              class="w-96"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- end biography -->
+      <!-- start about me  -->
+      <section>
+        <div
+          class="grid gap-3 mt-28 grid-cols-1 grid-rows-1 lg:grid-rows-1 lg:grid-cols-2"
+        >
+          <div class="flex justify-center items-center">
+            <div class="">
+              <h5 class="text-teal-300 text-sm mb-1">ABOUT ME</h5>
+              <h1 class="text-5xl text-teal-400 font-semibold font-mono mb-3">
+                Better design, better experience
+              </h1>
+              <p class="text-teal-200">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia aliquid qui voluptate, modi consequatur neque quidem.
+                Fugiat eligendi necessitatibus sint?
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <div class="">
+              <h3 class="text-teal-300 mb-5 text-4xl">Connect With Me</h3>
+              <p class="text-teal-200 mb-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                nostrum qui eveniet sit, reprehenderit ea, dignissimos
+                architecto ex at rem labore eum tempora! Ipsam tenetur ad
+                similique ipsa impedit sunt?
+              </p>
+              <div class="">
+                <a
+                  href=""
+                  class="rounded-full border border-teal-700 bg-gray-300 mr-3"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                  href=""
+                  class="rounded-full border border-teal-700 bg-gray-300 mr-3"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a
+                  href=""
+                  class="rounded-full border border-teal-700 bg-gray-300 mr-3"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a
+                  href=""
+                  class="rounded-full border border-teal-700 bg-gray-300 mr-3"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end about me  -->
+      <!-- start service -->
+      <section>
+        <div class="mt-28">
+          <div class="flex justify-center items-center">
+            <div class="text-center">
+              <h6 class="text-teal-300 text-sm mb-2">What I Offer?</h6>
+              <h1 class="text-teal-400 text-4xl font-semibold font-mono mb-4">
+                My Service
+              </h1>
+              <p class="text-teal-200">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                voluptas maiores incidunt nostrum eaque quae autem laborum
+                magni!
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center mt-10">
+            <div
+              class="grid gap-5 grid-rows-4 grid-cols-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1"
+            >
+              <div
+                class="text-center bg-teal-800 hover:bg-teal-200 rounded-2xl px-3 py-6 shadow-2xl shadow-teal-600/30"
+              >
+                <a href="" class="">
+                  <button class="h-16 w-16 rounded-full bg-teal-400">
+                    <i class="fa-solid fa-user-check text-3xl"></i>
+                  </button>
+                  <h1 class="text-xl font-bold my-5">User Research</h1>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus, aliquam!
+                  </p>
+                </a>
+              </div>
+              <div
+                class="text-center bg-teal-800 hover:bg-teal-200 rounded-2xl px-3 py-6 shadow-2xl shadow-teal-600/30"
+              >
+                <a href="" class="">
+                  <button class="h-16 w-16 rounded-full bg-teal-400">
+                    <i class="fa-regular fa-object-ungroup text-3xl"></i>
+                  </button>
+                  <h1 class="text-xl font-bold my-5">Visual Design</h1>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus, aliquam!
+                  </p>
+                </a>
+              </div>
+              <div
+                class="text-center bg-teal-800 hover:bg-teal-200 rounded-2xl px-3 py-6 shadow-2xl shadow-teal-600/30"
+              >
+                <a href="" class="">
+                  <button class="h-16 w-16 rounded-full bg-teal-400">
+                    <i class="fa-solid fa-users text-3xl"></i>
+                  </button>
+                  <h1 class="text-xl font-bold my-5">User Testing</h1>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus, aliquam!
+                  </p>
+                </a>
+              </div>
+              <div
+                class="text-center bg-teal-800 hover:bg-teal-200 rounded-2xl px-3 py-6 shadow-2xl shadow-teal-600/30"
+              >
+                <a href="" class="">
+                  <button class="h-16 w-16 rounded-full bg-teal-400">
+                    <i class="fa-solid fa-diagram-project text-3xl"></i>
+                  </button>
+                  <h1 class="text-xl font-bold my-5">Prototype</h1>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus, aliquam!
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end service -->
+      <!-- start project  -->
+      <section>
+        <div class="">
+          <div class="mt-28">
+            <div class="flex justify-center items-center">
+              <div class="text-center">
+                <h6 class="text-teal-300 text-base mb-2">
+                  Creative Portfolios and Project
+                </h6>
+                <h1 class="text-teal-400 text-4xl font-semibold font-mono mb-4">
+                  Recent Works
+                </h1>
+                <p class="text-teal-200">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Omnis voluptas maiores incidunt nostrum eaque quae autem
+                  laborum magni!
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center mt-10">
+              <div
+                class="grid gap-5 grid-rows-3 grid-cols-1 md:grid-cols-2 md:grid-rows-2"
+              >
+                <div class="mt-3 mb-12">
+                  <a href="">
+                    <img
+                      src="../pics/my portfolio profile.png"
+                      alt=""
+                      class="rounded-md"
+                    />
+                    <h1
+                      class="my-4 text-teal-400 text-3xl font-semibold font-sans"
+                    >
+                      My normal portfolio
+                    </h1>
+                    <div class="flex justify-between">
+                      <div>
+                        <a href="" class="text-3xl text-orange-600 mr-1">
+                          <i class="fa-brands fa-html5"></i>
+                        </a>
+                        <a href="" class="text-3xl text-blue-600 mr-1">
+                          <i class="fa-brands fa-css3-alt"></i
+                        ></a>
+                        <a href="" class="text-3xl text-purple-600">
+                          <i class="fa-brands fa-bootstrap"></i>
+                        </a>
+                      </div>
+                      <div class="flex">
+                        <span
+                          class="text-white text-2xl font-thin me-3 text-center"
+                          >Watch in Youtube
+                        </span>
+                        <button class="text-red-600 text-2xl">
+                          <i class="fa-brands fa-youtube text-center"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="mb-12">
+                  <a href="">
+                    <img
+                      src="../pics/Screenshot 2023-09-19 212135.png"
+                      alt=""
+                      class="rounded-md"
+                    />
+                    <h1
+                      class="my-4 text-teal-400 text-3xl font-semibold font-sans"
+                    >
+                      My POS project
+                    </h1>
+                    <div class="flex justify-between">
+                      <div class="">
+                        <a href="" class="text-3xl text-orange-600 mr-1"
+                          ><i class="fa-brands fa-html5"></i
+                        ></a>
+                        <a href="" class="text-3xl text-blue-600 mr-1"
+                          ><i class="fa-brands fa-css3-alt"></i
+                        ></a>
+                        <a href="" class="text-3xl text-purple-600 mr-1"
+                          ><i class="fa-brands fa-bootstrap"></i
+                        ></a>
+                        <a href="" class="text-3xl text-yellow-600 mr-1"
+                          ><i class="fa-brands fa-js"></i
+                        ></a>
+                        <a href="" class="text-3xl text-blue-300 mr-1"
+                          ><i class="fa-brands fa-php"></i
+                        ></a>
+                        <a href="" class="text-3xl text-red-600 mr-1"
+                          ><i class="fa-brands fa-laravel"></i
+                        ></a>
+                      </div>
+                      <div class="flex">
+                        <button class="text-red-600 text-2xl">
+                          <i class="fa-brands fa-youtube text-center"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="">
+                  <a href="">
+                    <img
+                      src="../pics/Screenshot 2023-09-30 231716.png"
+                      alt=""
+                      class="rounded-md border border-white"
+                    />
+                    <h1
+                      class="my-4 text-teal-400 text-3xl font-semibold font-sans"
+                    >
+                      My Portfolio with Tailwind
+                    </h1>
+                    <div class="flex justify-between">
+                      <div>
+                        <a href="" class="text-3xl text-orange-600 mr-1"
+                          ><i class="fa-brands fa-html5"></i
+                        ></a>
+                        <a href="" class="text-3xl text-blue-600 mr-1"
+                          ><i class="fa-brands fa-css3-alt"></i
+                        ></a>
+                        <a href="" class="inline-block">
+                          <img
+                            src="../pics/pngwing.com (1).png"
+                            class="w-8"
+                            alt=""
+                          />
+                        </a>
+                        <a href="" class="text-3xl text-yellow-600 mr-1"
+                          ><i class="fa-brands fa-js"></i
+                        ></a>
+                      </div>
+                      <div class="flex">
+                        <span
+                          class="text-white text-2xl font-thin me-3 text-center"
+                          >Watch in Youtube
+                        </span>
+                        <button class="text-red-600 text-2xl">
+                          <i class="fa-brands fa-youtube text-center"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end project  -->
+      <!-- start contact me  -->
+      <section>
+        <div class="mt-6 mb-7">
+          <div class="flex justify-center items-center md:px-28">
+            <div class="text-center">
+              <h6 class="text-teal-300 text-sm mb-2">Contact With Me</h6>
+              <h1 class="text-teal-400 text-4xl font-semibold font-mono mb-4">
+                Have an Project in Mind?
+              </h1>
+              <p class="text-teal-200">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                voluptas maiores incidunt nostrum eaque quae autem laborum
+                magni!
+              </p>
+            </div>
+          </div>
+          <form action="">
+            <div class="flex justify-center items-center mt-10">
+              <div class="grid gap-5 grid-cols-1 md:grid-cols-2">
+                <div class="">
+                  <div class="mb-6">
+                    <input
+                      type="text"
+                      id="first_name"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="John"
+                      required
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <input
+                      type="email"
+                      id="email"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="john.doe@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="">
+                  <div class="mb-6">
+                    <input
+                      type="text"
+                      id="company"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Flowbite"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="123-45-678"
+                      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-start-1 col-end-2 md:col-end-3">
+                  <textarea
+                    id="message"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Write your thoughts here..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center mt-6">
+              <button
+                type="submit"
+                class="text-white bg-purple-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-full text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
+              >
+                Contact Me
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- end contact me  -->
+    </main>
+    <!-- end main  -->
+    <!-- start footer  -->
+    <footer class="container px-20">
+      <footer class="bg-primary dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center mr-2">
+                <img
+                  src="../pics/Screenshot 2023-09-30 154236.png"
+                  class="h-8 mr-3"
+                  alt="Kaung Myat Kyaw Logo"
+                />
+              </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Resources
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a href="https://flowbite.com/" class="hover:underline"
+                      >Flowbite</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://tailwindcss.com/" class="hover:underline"
+                      >Tailwind CSS</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Follow me
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a
+                      href="https://github.com/inhibitor255"
+                      class="hover:underline"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:underline">Discord</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Legal
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:underline"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <span
+              class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              >© 2023
+              <a href="https://flowbite.com/" class="hover:underline"
+                >Kaung Myat™</a
+              >. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 8 19"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Facebook page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 21 16"
+                >
+                  <path
+                    d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                  />
+                </svg>
+                <span class="sr-only">Discord community</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 17"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Twitter page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">GitHub account</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Dribbble account</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    <!-- end footer  -->
+  </body>
+  <!-- flowbite css js file  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</html>
