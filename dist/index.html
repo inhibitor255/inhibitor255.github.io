@@ -86,7 +86,7 @@
             >
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-teal-200 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                   >Home</a
@@ -94,7 +94,7 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-blue-200 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                   >About</a
@@ -102,7 +102,7 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#service"
                   class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-blue-200 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                   >Service</a
@@ -110,15 +110,15 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#projects"
                   class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-blue-200 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
-                  >Pricing</a
+                  >Recent Projects</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   class="block py-2 pl-3 pr-4 text-white hover:text-black hover:bg-teal-100 active:bg-teal-200 focus:outline-none focus:ring focus:ring-teal-300 rounded md:bg-transparent md:text-blue-200 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                   >Contact</a
@@ -134,7 +134,7 @@
     <!-- start main -->
     <main class="container px-24">
       <!-- start biography -->
-      <section>
+      <section id="home">
         <div
           class="grid gap-3 mt-28 grid-cols-1 grid-rows-1 lg:grid-rows-1 lg:grid-cols-2"
         >
@@ -178,7 +178,7 @@
       </section>
       <!-- end biography -->
       <!-- start about me  -->
-      <section>
+      <section id="about">
         <div
           class="grid gap-3 mt-28 grid-cols-1 grid-rows-1 lg:grid-rows-1 lg:grid-cols-2"
         >
@@ -236,7 +236,7 @@
       </section>
       <!-- end about me  -->
       <!-- start service -->
-      <section>
+      <section id="service">
         <div class="mt-28">
           <div class="flex justify-center items-center">
             <div class="text-center">
@@ -317,7 +317,7 @@
       </section>
       <!-- end service -->
       <!-- start project  -->
-      <section>
+      <section id="projects">
         <div class="">
           <div class="mt-28">
             <div class="flex justify-center items-center">
@@ -339,122 +339,157 @@
               <div
                 class="grid gap-5 grid-rows-3 grid-cols-1 md:grid-cols-2 md:grid-rows-2"
               >
-                <div class="mt-3 mb-12">
-                  <a href="">
+                <div class="mb-12">
+                  <a
+                    href="https://github.com/inhibitor255/inhibitor255.github.io/commit/406bc62623d7e6b4819626e60cb4d91f5cada78a"
+                    target="_blank"
+                  >
                     <img
                       src="./pics/my portfolio profile.png"
                       alt=""
                       class="rounded-md"
                     />
-                    <h1
-                      class="my-4 text-teal-400 text-3xl font-semibold font-sans"
-                    >
-                      My normal portfolio
-                    </h1>
-                    <div class="flex justify-between">
-                      <div>
-                        <a href="" class="text-3xl text-orange-600 mr-1">
-                          <i class="fa-brands fa-html5"></i>
-                        </a>
-                        <a href="" class="text-3xl text-blue-600 mr-1">
-                          <i class="fa-brands fa-css3-alt"></i
-                        ></a>
-                        <a href="" class="text-3xl text-purple-600">
-                          <i class="fa-brands fa-bootstrap"></i>
-                        </a>
+
+                    <div class="bg-gray-900 px-5 pb-5 rounded-b-lg">
+                      <div class="flex justify-between">
+                        <div class="">
+                          <h1
+                            class="my-4 text-teal-400 text-xl font-semibold font-sans"
+                          >
+                            My normal portfolio
+                          </h1>
+                        </div>
+                        <div class="flex items-center">
+                          <a href="" class="text-3xl text-orange-600 mr-1">
+                            <i class="fa-brands fa-html5"></i>
+                          </a>
+                          <a href="" class="text-3xl text-blue-600 mr-1">
+                            <i class="fa-brands fa-css3-alt"></i
+                          ></a>
+                          <a href="" class="text-3xl text-purple-600">
+                            <i class="fa-brands fa-bootstrap"></i>
+                          </a>
+                        </div>
                       </div>
                       <div class="flex">
-                        <span
-                          class="text-white text-2xl font-thin me-3 text-center"
-                          >Watch in Youtube
-                        </span>
-                        <button class="text-red-600 text-2xl">
-                          <i class="fa-brands fa-youtube text-center"></i>
-                        </button>
+                        <a href="">
+                          <span
+                            class="text-white text-2xl font-thin me-3 text-center"
+                            >Watch in Youtube
+                          </span>
+                          <button class="text-red-600 text-2xl">
+                            <i class="fa-brands fa-youtube text-center"></i>
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div class="mb-12">
-                  <a href="">
+                  <a
+                    href="https://github.com/inhibitor255/MyProject"
+                    target="_blank"
+                  >
                     <img
                       src="./pics/Screenshot 2023-09-19 212135.png"
                       alt=""
                       class="rounded-md"
                     />
-                    <h1
-                      class="my-4 text-teal-400 text-3xl font-semibold font-sans"
-                    >
-                      My POS project
-                    </h1>
-                    <div class="flex justify-between">
-                      <div class="">
-                        <a href="" class="text-3xl text-orange-600 mr-1"
-                          ><i class="fa-brands fa-html5"></i
-                        ></a>
-                        <a href="" class="text-3xl text-blue-600 mr-1"
-                          ><i class="fa-brands fa-css3-alt"></i
-                        ></a>
-                        <a href="" class="text-3xl text-purple-600 mr-1"
-                          ><i class="fa-brands fa-bootstrap"></i
-                        ></a>
-                        <a href="" class="text-3xl text-yellow-600 mr-1"
-                          ><i class="fa-brands fa-js"></i
-                        ></a>
-                        <a href="" class="text-3xl text-blue-300 mr-1"
-                          ><i class="fa-brands fa-php"></i
-                        ></a>
-                        <a href="" class="text-3xl text-red-600 mr-1"
-                          ><i class="fa-brands fa-laravel"></i
-                        ></a>
+
+                    <div class="bg-gray-900 px-5 pb-5 rounded-b-lg">
+                      <div class="flex justify-between">
+                        <div class="">
+                          <h1
+                            class="my-4 text-teal-400 text-xl font-semibold font-sans"
+                          >
+                            My POS project
+                          </h1>
+                        </div>
+                        <div class="flex items-center">
+                          <a href="" class="text-3xl text-orange-600 mr-1"
+                            ><i class="fa-brands fa-html5"></i
+                          ></a>
+                          <a href="" class="text-3xl text-blue-600 mr-1"
+                            ><i class="fa-brands fa-css3-alt"></i
+                          ></a>
+                          <a href="" class="text-3xl text-purple-600 mr-1"
+                            ><i class="fa-brands fa-bootstrap"></i
+                          ></a>
+                          <a href="" class="text-3xl text-yellow-600 mr-1"
+                            ><i class="fa-brands fa-js"></i
+                          ></a>
+                          <a href="" class="text-3xl text-blue-300 mr-1"
+                            ><i class="fa-brands fa-php"></i
+                          ></a>
+                          <a href="" class="text-3xl text-red-600 mr-1"
+                            ><i class="fa-brands fa-laravel"></i
+                          ></a>
+                        </div>
                       </div>
-                      <div class="flex">
-                        <button class="text-red-600 text-2xl">
-                          <i class="fa-brands fa-youtube text-center"></i>
-                        </button>
+                      <div class="">
+                        <div class="flex">
+                          <span
+                            class="text-white text-2xl font-thin me-3 text-center"
+                            >Watch in Youtube
+                          </span>
+                          <button class="text-red-600 text-xl">
+                            <i class="fa-brands fa-youtube text-center"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div class="">
-                  <a href="">
+                  <a
+                    href="https://github.com/inhibitor255/inhibitor255.github.io"
+                    target="_blank"
+                    class=""
+                  >
                     <img
                       src="./pics/Screenshot 2023-09-30 231716.png"
                       alt=""
-                      class="rounded-md border border-white"
+                      class="rounded-t-md border border-white"
                     />
-                    <h1
-                      class="my-4 text-teal-400 text-3xl font-semibold font-sans"
-                    >
-                      My Portfolio with Tailwind
-                    </h1>
-                    <div class="flex justify-between">
-                      <div>
-                        <a href="" class="text-3xl text-orange-600 mr-1"
-                          ><i class="fa-brands fa-html5"></i
-                        ></a>
-                        <a href="" class="text-3xl text-blue-600 mr-1"
-                          ><i class="fa-brands fa-css3-alt"></i
-                        ></a>
-                        <a href="" class="inline-block">
-                          <img
-                            src="./pics/pngwing.com (1).png"
-                            class="w-8"
-                            alt=""
-                          />
-                        </a>
-                        <a href="" class="text-3xl text-yellow-600 mr-1"
-                          ><i class="fa-brands fa-js"></i
-                        ></a>
+
+                    <div class="bg-gray-900 px-5 pb-5 rounded-b-lg">
+                      <div class="flex justify-between">
+                        <div class="">
+                          <h1
+                            class="my-4 text-teal-400 text-2xl font-semibold font-sans"
+                          >
+                            My Portfolio (Tailwind)
+                          </h1>
+                        </div>
+                        <div class="flex items-center">
+                          <a href="" class="text-3xl text-orange-600 mr-1"
+                            ><i class="fa-brands fa-html5"></i
+                          ></a>
+                          <a href="" class="text-3xl text-blue-600 mr-1"
+                            ><i class="fa-brands fa-css3-alt"></i
+                          ></a>
+                          <a href="" class="inline-block mr-2">
+                            <img
+                              src="./pics/pngwing.com (1).png"
+                              class="w-8"
+                              alt=""
+                            />
+                          </a>
+                          <a href="" class="text-3xl text-yellow-600 mr-1"
+                            ><i class="fa-brands fa-js"></i
+                          ></a>
+                        </div>
                       </div>
-                      <div class="flex">
-                        <span
-                          class="text-white text-2xl font-thin me-3 text-center"
-                          >Watch in Youtube
-                        </span>
-                        <button class="text-red-600 text-2xl">
-                          <i class="fa-brands fa-youtube text-center"></i>
-                        </button>
+                      <div class="">
+                        <div class="flex">
+                          <span
+                            class="text-white text-2xl font-thin me-3 text-center"
+                            >Watch in Youtube
+                          </span>
+                          <button class="text-red-600 text-2xl">
+                            <i class="fa-brands fa-youtube text-center"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </a>
@@ -466,13 +501,13 @@
       </section>
       <!-- end project  -->
       <!-- start contact me  -->
-      <section>
+      <section id="contact">
         <div class="mt-6 mb-7">
           <div class="flex justify-center items-center md:px-28">
             <div class="text-center">
               <h6 class="text-teal-300 text-sm mb-2">Contact With Me</h6>
               <h1 class="text-teal-400 text-4xl font-semibold font-mono mb-4">
-                Have an Project in Mind?
+                Have any Project in Mind?
               </h1>
               <p class="text-teal-200">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
